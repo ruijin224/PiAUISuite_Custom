@@ -34,3 +34,5 @@ if not today_low == -9000:
     forecast_string += "the low is " + today_low + ", "
 if not today_chance == -9000:
     forecast_string += "the chance of rain is " + today_chance + "%."
+
+print forecast_string
