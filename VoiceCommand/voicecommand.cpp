@@ -363,7 +363,6 @@ inline void VoiceCommand::ProcessMessage(const char* message) {
         Search(message);
     } else if(!passthrough) {
         printf("No translation\n");
-        Speak("No translation");
     } 
 }
 
