@@ -368,6 +368,8 @@ inline void VoiceCommand::ProcessMessage(const char* message) {
 
 void VoiceCommand::GetConfig() {
     fprintf(stderr,"Opening config file...\n");
+    printf("Config file location: ");
+    printf(config_file.c_str());
     ifstream file(config_file.c_str(),ios::in);
     if(!file.is_open()) {
         printf("Can't find config file!\nI'll make one.\n");
