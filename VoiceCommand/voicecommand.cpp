@@ -86,7 +86,7 @@ int main(int argc, char* argv[]) {
                     fclose(cmd);
                     //system("rm -fr /dev/shm/noise.*");
                     //printf("message: %s, keyword: %s\n", message, vc.keyword.c_str());
-                    if(strstr(message,vc.keyword.c_str())) {
+                    if(contains(message,vc.keyword.c_str())) {
                         message[0] = '\0'; //this will clear the first bit
                         ProcessVoice(cmd,vc,message);
                     }
